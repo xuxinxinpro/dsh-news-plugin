@@ -1,0 +1,13 @@
+{
+  "name": "news-plugin",
+  "version": "0.1.0",
+  "description": "每日新闻简报工具 — DeepSeek Harness 插件，一键获取今日全国新闻热搜。",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": ["dist", "cordis.patch.yml"],
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml"}},
+  "scripts": {"build": "tsc -p tsconfig.json"},
+  "dependencies": {"@deepseek-ai/dsh-tools": "0.2.0-rc.2"},
+  "peerDependencies": {"@deepseek-ai/cordis": "^4.0.4"}
+}
